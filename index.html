@@ -1,11 +1,179 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>PhoneGuard Developer Site</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PhoneGuard – Anti Theft</title>
+  <meta name="description" content="PhoneGuard helps protect your phone with trap mode, motion alerts, and an evidence vault." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<h1>PhoneGuard – Anti Theft</h1>
-<p>Official developer site for PhoneGuard mobile application.</p>
-<p>This site is used for app-ads.txt verification.</p>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">PG</div>
+        <span>PhoneGuard</span>
+      </div>
+      <nav class="links">
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#support">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="badge">Security • Anti-theft • Evidence</p>
+          <h1>PhoneGuard – Anti Theft</h1>
+          <p class="sub">
+            Protect your phone with motion alerts and trap-mode evidence capture.
+            Keep your evidence private with secure access controls.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#" aria-label="Download on the App Store">
+              Download on the App Store
+            </a>
+            <a class="btn ghost" href="#support">Get Support</a>
+          </div>
+
+          <p class="fine">
+            Tip: Replace the “Download on the App Store” link once your App Store URL is live.
+          </p>
+        </div>
+
+        <div class="card preview">
+          <div class="preview-top">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <div class="preview-body">
+            <h3>What it does</h3>
+            <ul class="check">
+              <li>Trap Mode: capture intruder evidence</li>
+              <li>Motion Alert: alarm when moved</li>
+              <li>Evidence Vault: private evidence storage</li>
+              <li>Scan for unknown Bluetooth trackers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <p class="muted">Designed to help you know when someone touched your device.</p>
+
+        <div class="grid3">
+          <div class="card">
+            <h3>Trap Mode</h3>
+            <p>Shows a decoy lock screen and captures evidence after incorrect attempts.</p>
+          </div>
+
+          <div class="card">
+            <h3>Motion Alert</h3>
+            <p>Plays a loud alarm when your phone is picked up or moved.</p>
+          </div>
+
+          <div class="card">
+            <h3>Evidence Vault</h3>
+            <p>Store captured evidence with protected access to prevent deletion.</p>
+          </div>
+
+          <div class="card">
+            <h3>Bluetooth Tracker Scan</h3>
+            <p>Detect unknown Bluetooth devices near you (like unwanted trackers).</p>
+          </div>
+
+          <div class="card">
+            <h3>Simple Setup</h3>
+            <p>Quick configuration so you can enable protection in seconds.</p>
+          </div>
+
+          <div class="card">
+            <h3>Built for Privacy</h3>
+            <p>No tracking. Evidence stays on-device unless you choose to share it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section alt">
+      <div class="container">
+        <h2>Privacy</h2>
+        <p class="muted">
+          PhoneGuard is designed with privacy in mind.
+        </p>
+
+        <div class="card">
+          <ul class="bullets">
+            <li><strong>No user tracking.</strong> The app does not track you across other companies’ apps or websites.</li>
+            <li><strong>Local-first evidence.</strong> Evidence is stored on your device.</li>
+            <li><strong>User control.</strong> You decide if/when anything is shared.</li>
+          </ul>
+
+          <div class="row">
+            <a class="btn ghost" href="#" aria-label="Open Privacy Policy">Privacy Policy</a>
+            <a class="btn ghost" href="#" aria-label="Open Terms">Terms</a>
+          </div>
+
+          <p class="fine">
+            Note: Replace the Privacy Policy / Terms links with your actual pages when ready.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section">
+      <div class="container">
+        <h2>Support</h2>
+        <p class="muted">Need help or have a question? Reach out below.</p>
+
+        <div class="grid2">
+          <div class="card">
+            <h3>Contact</h3>
+            <p>Email support for help with setup, subscriptions, or troubleshooting.</p>
+            <p class="fine">
+              <strong>Support Email:</strong> <a href="mailto:theofficialmirelle@gmail.com">replace-this@email.com</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>FAQ</h3>
+            <ul class="bullets">
+              <li>How Trap Mode works</li>
+              <li>How to protect Evidence Vault access</li>
+              <li>Subscription / Premium access</li>
+              <li>Troubleshooting</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card callout">
+          <h3>App Review Note</h3>
+          <p class="muted">
+            This site is the official developer support page for PhoneGuard and may also host app-ads.txt for ads verification.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>© <span id="y"></span> PhoneGuard. All rights reserved.</p>
+      <p class="fine">This site may be used for app-ads.txt verification.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
